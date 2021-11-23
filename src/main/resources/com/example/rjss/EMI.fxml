@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<Pane focusTraversable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" scaleShape="false" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.rjss.HelloController">
+   <children>
+      <Label layoutX="14.0" layoutY="28.0" prefHeight="20.0" prefWidth="97.0" text="EMI Calculator">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="4.0" arcWidth="4.0" height="337.0" layoutX="10.0" layoutY="53.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeMiterLimit="90.0" strokeType="OUTSIDE" strokeWidth="1.5" width="567.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.6259541975632879">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.8500000238418579" green="0.705216646194458" blue="0.22949999570846558" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="0.8777777552604675" blue="0.5111111402511597" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+         <effect>
+            <InnerShadow offsetX="4.0" offsetY="4.0" />
+         </effect>
+      </Rectangle>
+      <Label blendMode="MULTIPLY" layoutX="51.0" layoutY="95.0" prefHeight="20.0" prefWidth="67.0" text="Amount">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label blendMode="MULTIPLY" layoutX="333.0" layoutY="95.0" prefHeight="20.0" prefWidth="45.0" text="Tenure">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="51.0" layoutY="130.0" prefHeight="20.0" prefWidth="149.0" text="______________________________" />
+      <TextField blendMode="SOFT_LIGHT" layoutX="51.0" layoutY="118.0" promptText="Enter Amount" />
+      <TextField blendMode="SOFT_LIGHT" layoutX="333.0" layoutY="118.0" promptText="In years" />
+      <Label layoutX="333.0" layoutY="130.0" prefHeight="20.0" prefWidth="149.0" text="______________________________" />
+      <Label blendMode="COLOR_BURN" layoutX="47.0" layoutY="248.0" prefHeight="45.0" prefWidth="67.0" text="EMI">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="39.0" fitWidth="45.0" layoutX="109.0" layoutY="274.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@rupee-icon-EMI.png" />
+         </image>
+      </ImageView>
+      <TextField blendMode="HARD_LIGHT" layoutX="140.0" layoutY="274.0" prefHeight="39.0" prefWidth="149.0" promptText="Result" />
+      <Button blendMode="DARKEN" cache="true" layoutX="200.0" layoutY="188.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="135.0" style="-fx-background-color: #dab53a; -fx-text-fill: black; -fx-border-color: black;" text="Calculate">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Label blendMode="MULTIPLY" layoutX="246.0" layoutY="313.0" prefHeight="17.0" prefWidth="67.0" text="\@7% ROI*">
+         <font>
+            <Font name="System Italic" size="11.0" />
+         </font>
+      </Label>
+      <Label blendMode="MULTIPLY" layoutX="333.0" layoutY="248.0" prefHeight="20.0" prefWidth="97.0" text="Interest Payable:">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label blendMode="MULTIPLY" layoutX="333.0" layoutY="312.0" prefHeight="20.0" prefWidth="149.0" text="Total Amount Payable:">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <TextField blendMode="HARD_LIGHT" layoutX="430.0" layoutY="274.0" prefHeight="25.0" prefWidth="135.0" promptText="Interest" />
+      <TextField blendMode="HARD_LIGHT" layoutX="430.0" layoutY="342.0" prefHeight="25.0" prefWidth="135.0" promptText="Principle+Interest" />
+      <Button layoutX="14.0" layoutY="3.0" mnemonicParsing="false" onAction="#onHomeButtonClick" text="🏠Home" />
+   </children>
+</Pane>

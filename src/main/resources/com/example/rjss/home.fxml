@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.rjss.HelloController">
+   <children>
+      <Pane layoutY="42.0" prefHeight="315.0" prefWidth="600.0">
+         <children>
+            <ImageView fitHeight="315.0" fitWidth="472.0" layoutX="127.0" layoutY="1.0" opacity="0.45" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../../Downloads/visual-stories-micheile-SoT4-mZhyhE-unsplash%20(1).jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="43.0" fitWidth="45.0" layoutX="442.0" layoutY="98.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../../Downloads/5566858%20(1).png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="43.0" fitWidth="45.0" layoutX="346.0" layoutY="154.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../../Downloads/debit-card%20(1).png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="43.0" fitWidth="45.0" layoutX="425.0" layoutY="205.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../../Downloads/saving-money%20(1).png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="43.0" fitWidth="45.0" layoutX="529.0" layoutY="154.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../../Downloads/942802%20(1).png" />
+               </image>
+            </ImageView>
+            <Pane layoutX="27.0" layoutY="65.0" prefHeight="217.0" prefWidth="190.0" style="-fx-background-color: #dab53a; -fx-border-color: #dedee4;">
+               <children>
+                  <Label layoutX="77.0" layoutY="14.0" text="SIGN IN">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="6.0" layoutY="39.0" text="User ID">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="7.0" layoutY="85.0" text="Password">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="7.0" layoutY="136.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="60.0" text="🔐 LOGIN">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="41.0" layoutY="178.0" mnemonicParsing="false" text="Create ACCOUNT" />
+                  <Hyperlink layoutX="76.0" layoutY="134.0" prefHeight="25.0" prefWidth="89.0" text="forgot password?">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Hyperlink>
+                  <Label layoutX="39.0" layoutY="160.0" text="Don't have an account?">
+                     <font>
+                        <Font size="11.0" />
+                     </font>
+                  </Label>
+                  <TextField layoutX="7.0" layoutY="54.0" prefHeight="25.0" prefWidth="114.0" />
+                  <TextField layoutX="7.0" layoutY="109.0" prefHeight="25.0" prefWidth="114.0" />
+               </children>
+            </Pane>
+            <Label layoutX="153.0" layoutY="14.0" style="-fx-background-color: #dab53a;" text="Welcome  To RJSS Bank">
+               <font>
+                  <Font name="Cooper Black" size="24.0" />
+               </font>
+            </Label>
+            <Button layoutX="512.0" layoutY="205.0" mnemonicParsing="false" onAction="#onFAQsButtonClick" prefHeight="17.0" prefWidth="60.0" text="FAQs">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Button>
+            <Button layoutX="417.0" layoutY="248.0" mnemonicParsing="false" onAction="#onLoanButtonClick" prefHeight="17.0" prefWidth="60.0" text="Loan">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Button>
+            <Button fx:id="gotopass" layoutX="434.0" layoutY="157.0" mnemonicParsing="false" onAction="#onpassbookButtonClick" prefHeight="17.0" prefWidth="60.0" text="Passbook">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Button>
+            <Button layoutX="333.0" layoutY="205.0" mnemonicParsing="false" onAction="#onCcButtonClick" prefHeight="22.0" prefWidth="72.0" text="Credit Card">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#dab53a" height="43.0" layoutX="-3.0" stroke="BLACK" strokeType="INSIDE" width="606.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#dab53a" height="43.0" layoutX="-3.0" layoutY="357.0" stroke="BLACK" strokeType="INSIDE" width="606.0" />
+   </children>
+</AnchorPane>
