@@ -89,9 +89,9 @@
             <Font name="System Italic" size="11.0" />
          </font>
       </Label>
-      <ImageView fitHeight="80.0" fitWidth="70.0" layoutX="505.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="80.0" fitWidth="70.0" layoutX="505.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@FAQ%20icon.png" />
+            <Image url="@../../../icons/FAQ%20icon.png" />
          </image>
          <cursor>
             <Cursor fx:constant="DEFAULT" />
