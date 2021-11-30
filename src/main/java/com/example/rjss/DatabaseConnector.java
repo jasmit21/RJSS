@@ -8,11 +8,11 @@ public class DatabaseConnector {
     public Connection databaseLink;
 
     public Connection getDatabaseLink() {
-        String databaseName = "RailwayTicketBookingSystem";
-        String databaseUser = "AniketParate";
-        String databasePassword = "MDJafzw26MBXkQB3";
+        String databaseName = "RJSSBank";
+        String databaseUser = "RaviPandey";
+        String databasePassword = "tJIttu4FR5DFKnoz";
 
-        String url = "jdbc:mysql://jblminiproject-do-user-10209104-0.b.db.ondigitalocean.com:25060/" + databaseName;
+        String url = "jdbc:mysql://jblminiproject-do-user-10209104-0.b.db.ondigitalocean.com" + databaseName;
 
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
