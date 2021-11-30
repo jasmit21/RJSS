@@ -13,7 +13,7 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<Pane focusTraversable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" scaleShape="false" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.rjss.HelloController">
+<Pane focusTraversable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" scaleShape="false" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.rjss.HelloController">
    <children>
       <Label layoutX="14.0" layoutY="28.0" prefHeight="20.0" prefWidth="97.0" text="EMI Calculator">
          <font>
@@ -55,39 +55,44 @@
       <TextField fx:id="principalAmt" blendMode="SOFT_LIGHT" layoutX="51.0" layoutY="118.0" promptText="Enter Amount" />
       <TextField fx:id="tenure" blendMode="SOFT_LIGHT" layoutX="333.0" layoutY="118.0" promptText="In years" />
       <Label layoutX="333.0" layoutY="133.0" prefHeight="20.0" prefWidth="149.0" text="______________________________" />
-      <Label blendMode="COLOR_BURN" layoutX="47.0" layoutY="248.0" prefHeight="45.0" prefWidth="67.0" text="EMI">
+      <Label blendMode="COLOR_BURN" layoutX="47.0" layoutY="228.0" prefHeight="45.0" prefWidth="67.0" text="EMI">
          <font>
             <Font size="30.0" />
          </font>
       </Label>
-      <ImageView fitHeight="39.0" fitWidth="45.0" layoutX="109.0" layoutY="274.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="39.0" fitWidth="45.0" layoutX="109.0" layoutY="254.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../../icons/rupee-icon-EMI.png" />
          </image>
       </ImageView>
-      <TextField fx:id="result" blendMode="HARD_LIGHT" layoutX="140.0" layoutY="274.0" prefHeight="39.0" prefWidth="149.0" promptText="Result" />
+      <TextField fx:id="result" blendMode="HARD_LIGHT" layoutX="140.0" layoutY="254.0" prefHeight="39.0" prefWidth="149.0" promptText="Result" />
       <Button blendMode="DARKEN" cache="true" layoutX="200.0" layoutY="188.0" mnemonicParsing="false" onAction="#onCalculateButtonClick" prefHeight="25.0" prefWidth="135.0" style="-fx-background-color: #dab53a; -fx-text-fill: black; -fx-border-color: black;" text="Calculate">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>
       </Button>
-      <Label blendMode="MULTIPLY" layoutX="246.0" layoutY="313.0" prefHeight="17.0" prefWidth="67.0" text="\@7% ROI*">
+      <Label blendMode="MULTIPLY" layoutX="246.0" layoutY="293.0" prefHeight="17.0" prefWidth="67.0" text="\@7% ROI*">
          <font>
             <Font name="System Italic" size="11.0" />
          </font>
       </Label>
-      <Label blendMode="MULTIPLY" layoutX="333.0" layoutY="248.0" prefHeight="20.0" prefWidth="97.0" text="Interest Payable:">
+      <Label blendMode="MULTIPLY" layoutX="333.0" layoutY="228.0" prefHeight="20.0" prefWidth="97.0" text="Interest Payable:">
          <font>
             <Font size="13.0" />
          </font>
       </Label>
-      <Label blendMode="MULTIPLY" layoutX="333.0" layoutY="312.0" prefHeight="20.0" prefWidth="149.0" text="Total Amount Payable:">
+      <Label blendMode="MULTIPLY" layoutX="333.0" layoutY="292.0" prefHeight="20.0" prefWidth="149.0" text="Total Amount Payable:">
          <font>
             <Font size="13.0" />
          </font>
       </Label>
-      <TextField fx:id="interest" blendMode="HARD_LIGHT" layoutX="430.0" layoutY="274.0" prefHeight="25.0" prefWidth="135.0" promptText="Interest" />
-      <TextField fx:id="total" blendMode="HARD_LIGHT" layoutX="430.0" layoutY="342.0" prefHeight="25.0" prefWidth="135.0" promptText="Principle+Interest" />
+      <TextField fx:id="interest" blendMode="HARD_LIGHT" layoutX="430.0" layoutY="254.0" prefHeight="25.0" prefWidth="135.0" promptText="Interest" />
+      <TextField fx:id="total" blendMode="HARD_LIGHT" layoutX="430.0" layoutY="322.0" prefHeight="25.0" prefWidth="135.0" promptText="Principle+Interest" />
       <Button layoutX="14.0" layoutY="3.0" mnemonicParsing="false" onAction="#onHomeButtonClick" text="🏠Home" />
+      <Button layoutX="47.0" layoutY="331.0" mnemonicParsing="false" onAction="#onApplyButtonClick" prefHeight="33.0" prefWidth="97.0" style="-fx-background-color: #322d2d; -fx-background-radius: 15px;" text="Apply Now!" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="12.0" />
+         </font>
+      </Button>
    </children>
 </Pane>

@@ -78,6 +78,14 @@ public class HelloController {
     result.setText(String.valueOf(formatter.format(emi)));
 
 }
+@FXML
+public void onApplyButtonClick(ActionEvent event) throws IOException {
+    Parent root = FXMLLoader.load(getClass().getResource("Loan.fxml"));
+    stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+    scene = new Scene(root);
+    stage.setScene(scene);
+    stage.show();
+}
 
 }
 
