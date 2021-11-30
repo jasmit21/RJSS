@@ -17,27 +17,27 @@
          <children>
             <ImageView fitHeight="315.0" fitWidth="472.0" layoutX="127.0" layoutY="1.0" opacity="0.45" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../../../../../../Downloads/visual-stories-micheile-SoT4-mZhyhE-unsplash%20(1).jpg" />
+                  <Image url="@../../../icons/visual-stories-micheile-SoT4-mZhyhE-unsplash%20(1).jpg" />
                </image>
             </ImageView>
             <ImageView fitHeight="43.0" fitWidth="45.0" layoutX="442.0" layoutY="98.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../../../../../../Downloads/5566858%20(1).png" />
+                  <Image url="@../../../icons/5566858%20(1).png" />
                </image>
             </ImageView>
             <ImageView fitHeight="43.0" fitWidth="45.0" layoutX="346.0" layoutY="154.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../../../../../../Downloads/debit-card%20(1).png" />
+                  <Image url="@../../../icons/debit-card%20(1).png" />
                </image>
             </ImageView>
             <ImageView fitHeight="43.0" fitWidth="45.0" layoutX="425.0" layoutY="205.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../../../../../../Downloads/saving-money%20(1).png" />
+                  <Image url="@../../../icons/saving-money%20(1).png" />
                </image>
             </ImageView>
             <ImageView fitHeight="43.0" fitWidth="45.0" layoutX="529.0" layoutY="154.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../../../../../../Downloads/942802%20(1).png" />
+                  <Image url="@../../../icons/942802%20(1).png" />
                </image>
             </ImageView>
             <Pane layoutX="27.0" layoutY="65.0" prefHeight="217.0" prefWidth="190.0" style="-fx-background-color: #dab53a; -fx-border-color: #dedee4;">
