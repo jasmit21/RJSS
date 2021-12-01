@@ -10,15 +10,10 @@ import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
-import java.lang.Math;
 
 import java.io.IOException;
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.Statement;
-import java.text.DecimalFormat;
-import java.text.NumberFormat;
+import java.sql.*;
+import java.util.Objects;
 
 public class LoginController extends NullPointerException{
     private Parent root;
@@ -43,6 +38,8 @@ public class LoginController extends NullPointerException{
             LoginMessage.setText("Invalid Username Or Password");
         }
     }
+
+
 
     public void validatelogin(ActionEvent event) {
         DatabaseConnector connectnow = new DatabaseConnector();
@@ -74,10 +71,9 @@ public class LoginController extends NullPointerException{
         } catch (Exception ep) {
             ep.printStackTrace();
         }
-
     }
 
-    // This is for create account scene
+//     This is for create account scene
 
         @FXML
     public void onCreateAccountClick(ActionEvent event) throws IOException {
