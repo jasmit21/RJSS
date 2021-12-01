@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.rjss.HelloController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.rjss.HelloController">
    <children>
       <Pane layoutY="71.0" prefHeight="40.0" prefWidth="800.0" style="-fx-background-color: #Dab53a;">
          <children>
@@ -20,17 +20,17 @@
       </Pane>
       <ImageView fitHeight="150.0" fitWidth="230.0" layoutX="28.0" layoutY="181.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@Standard.png" />
+            <Image url="@../../../icons/Standard.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="150.0" fitWidth="230.0" layoutX="285.0" layoutY="180.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@Gold.png" />
+            <Image url="@../../../icons/Gold.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="150.0" fitWidth="230.0" layoutX="542.0" layoutY="180.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@Titanium.png" />
+            <Image url="@../../../icons/Platinum.png" />
          </image>
       </ImageView>
       <Label layoutX="98.0" layoutY="327.0" prefHeight="25.0" prefWidth="90.0" text="Classic Card.">
