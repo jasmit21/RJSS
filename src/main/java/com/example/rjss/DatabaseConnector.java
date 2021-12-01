@@ -7,12 +7,12 @@ import java.sql.DriverManager;
 public class DatabaseConnector {
     public Connection databaseLink;
 
-    public Connection getDatabaseLink() {
+    public Connection getConnection() {
         String databaseName = "RJSSBank";
         String databaseUser = "RaviPandey";
         String databasePassword = "tJIttu4FR5DFKnoz";
 
-        String url = "jdbc:mysql://jblminiproject-do-user-10209104-0.b.db.ondigitalocean.com" + databaseName;
+        String url = "jdbc:mysql://jblminiproject-do-user-10209104-0.b.db.ondigitalocean.com:25060/" + databaseName;
 
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
