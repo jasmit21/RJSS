@@ -13,14 +13,14 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<Pane focusTraversable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" scaleShape="false" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.rjss.HelloController">
+<Pane focusTraversable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" scaleShape="false" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.rjss.HelloController">
    <children>
       <Label layoutX="14.0" layoutY="28.0" prefHeight="20.0" prefWidth="97.0" text="EMI Calculator">
          <font>
             <Font size="14.0" />
          </font>
       </Label>
-      <Rectangle arcHeight="4.0" arcWidth="4.0" height="337.0" layoutX="10.0" layoutY="53.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeMiterLimit="90.0" strokeType="OUTSIDE" strokeWidth="1.5" width="567.0">
+      <Rectangle arcHeight="4.0" arcWidth="4.0" height="343.0" layoutX="6.0" layoutY="51.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeMiterLimit="90.0" strokeType="OUTSIDE" strokeWidth="1.5" width="583.0">
          <fill>
             <LinearGradient endX="1.0" endY="1.0" startX="0.6259541975632879">
                <stops>
@@ -43,56 +43,55 @@
       </Rectangle>
       <Label blendMode="MULTIPLY" layoutX="51.0" layoutY="95.0" prefHeight="20.0" prefWidth="67.0" text="Amount">
          <font>
-            <Font size="13.0" />
+            <Font size="15.0" />
          </font>
       </Label>
-      <Label blendMode="MULTIPLY" layoutX="333.0" layoutY="95.0" prefHeight="20.0" prefWidth="45.0" text="Tenure">
+      <Label blendMode="MULTIPLY" layoutX="359.0" layoutY="95.0" prefHeight="21.0" prefWidth="60.0" text="Tenure">
          <font>
-            <Font size="13.0" />
+            <Font size="15.0" />
          </font>
       </Label>
-      <Label layoutX="51.0" layoutY="130.0" prefHeight="20.0" prefWidth="149.0" text="______________________________" />
-      <TextField fx:id="principalAmt" blendMode="SOFT_LIGHT" layoutX="51.0" layoutY="118.0" promptText="Enter Amount" />
-      <TextField fx:id="tenure" blendMode="SOFT_LIGHT" layoutX="333.0" layoutY="118.0" promptText="In years" />
-      <Label layoutX="333.0" layoutY="133.0" prefHeight="20.0" prefWidth="149.0" text="______________________________" />
-      <Label blendMode="COLOR_BURN" layoutX="47.0" layoutY="228.0" prefHeight="45.0" prefWidth="67.0" text="EMI">
+      <Label layoutX="51.0" layoutY="133.0" prefHeight="20.0" prefWidth="158.0" text="______________________________" />
+      <TextField fx:id="principalAmt" blendMode="SCREEN" layoutX="51.0" layoutY="121.0" promptText="Enter Amount" style="-fx-background-color: white;" />
+      <TextField fx:id="tenure" blendMode="SCREEN" layoutX="359.0" layoutY="121.0" prefHeight="25.0" prefWidth="149.0" promptText="In years" />
+      <Label layoutX="359.0" layoutY="133.0" prefHeight="20.0" prefWidth="158.0" text="______________________________" />
+      <Label blendMode="COLOR_BURN" layoutX="51.0" layoutY="231.0" prefHeight="45.0" prefWidth="67.0" text="EMI" textFill="#0d0d0d">
          <font>
             <Font size="30.0" />
          </font>
       </Label>
-      <ImageView fitHeight="39.0" fitWidth="45.0" layoutX="109.0" layoutY="254.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="33.0" fitWidth="24.0" layoutX="53.0" layoutY="275.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../../icons/rupee-icon-EMI.png" />
          </image>
       </ImageView>
-      <TextField fx:id="result" blendMode="HARD_LIGHT" layoutX="140.0" layoutY="254.0" prefHeight="39.0" prefWidth="149.0" promptText="Result" />
-      <Button blendMode="DARKEN" cache="true" layoutX="200.0" layoutY="188.0" mnemonicParsing="false" onAction="#onCalculateButtonClick" prefHeight="25.0" prefWidth="135.0" style="-fx-background-color: #dab53a; -fx-text-fill: black; -fx-border-color: black;" text="Calculate">
+      <TextField fx:id="result" blendMode="HARD_LIGHT" layoutX="84.0" layoutY="275.0" prefHeight="33.0" prefWidth="158.0" promptText="Result" />
+      <Button blendMode="DARKEN" cache="true" layoutX="211.0" layoutY="189.0" mnemonicParsing="false" onAction="#onCalculateButtonClick" prefHeight="25.0" prefWidth="135.0" style="-fx-background-color: #dab53a; -fx-text-fill: black; -fx-border-color: black;" text="Calculate">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>
       </Button>
-      <Label blendMode="MULTIPLY" layoutX="246.0" layoutY="293.0" prefHeight="17.0" prefWidth="67.0" text="\@7% ROI*">
+      <Label blendMode="MULTIPLY" layoutX="181.0" layoutY="307.0" prefHeight="17.0" prefWidth="67.0" text="\@7% ROI*">
          <font>
-            <Font name="System Italic" size="11.0" />
+            <Font name="System Italic" size="13.0" />
          </font>
       </Label>
-      <Label blendMode="MULTIPLY" layoutX="333.0" layoutY="228.0" prefHeight="20.0" prefWidth="97.0" text="Interest Payable:">
-         <font>
-            <Font size="13.0" />
-         </font>
-      </Label>
-      <Label blendMode="MULTIPLY" layoutX="333.0" layoutY="292.0" prefHeight="20.0" prefWidth="149.0" text="Total Amount Payable:">
-         <font>
-            <Font size="13.0" />
-         </font>
-      </Label>
-      <TextField fx:id="interest" blendMode="HARD_LIGHT" layoutX="430.0" layoutY="254.0" prefHeight="25.0" prefWidth="135.0" promptText="Interest" />
-      <TextField fx:id="total" blendMode="HARD_LIGHT" layoutX="430.0" layoutY="322.0" prefHeight="25.0" prefWidth="135.0" promptText="Principle+Interest" />
+      <TextField fx:id="interest" blendMode="HARD_LIGHT" layoutX="384.0" layoutY="274.0" prefHeight="33.0" prefWidth="158.0" promptText="Interest" />
       <Button layoutX="14.0" layoutY="3.0" mnemonicParsing="false" onAction="#onHomeButtonClick" text="🏠Home" />
-      <Button layoutX="47.0" layoutY="331.0" mnemonicParsing="false" onAction="#onApplyButtonClick" prefHeight="33.0" prefWidth="97.0" style="-fx-background-color: #322d2d; -fx-background-radius: 15px;" text="Apply Now!" textAlignment="CENTER" textFill="WHITE">
+      <Button layoutX="240.0" layoutY="339.0" mnemonicParsing="false" onAction="#onApplyButtonClick" prefHeight="33.0" prefWidth="97.0" style="-fx-background-color: #322d2d; -fx-background-radius: 15px;" text="Apply Now!" textAlignment="CENTER" textFill="WHITE">
          <font>
             <Font name="Berlin Sans FB" size="12.0" />
          </font>
       </Button>
+      <Label blendMode="COLOR_BURN" layoutX="359.0" layoutY="229.0" prefHeight="45.0" prefWidth="121.0" text="Interest" textFill="#141414">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="33.0" fitWidth="24.0" layoutX="357.0" layoutY="275.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../icons/rupee-icon-EMI.png" />
+         </image>
+      </ImageView>
    </children>
 </Pane>
