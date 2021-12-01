@@ -12,7 +12,7 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.rjss.LoginController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.rjss.HelloController">
    <children>
       <Pane layoutY="42.0" prefHeight="315.0" prefWidth="600.0">
          <children>
@@ -43,7 +43,7 @@
             </ImageView>
             <Pane layoutX="27.0" layoutY="65.0" prefHeight="217.0" prefWidth="190.0" style="-fx-background-color: #dab53a; -fx-border-color: #dedee4;">
                <children>
-                  <Label layoutX="77.0" layoutY="14.0" text="SIGN IN">
+                  <Label layoutX="78.0" layoutY="14.0" text="SIGN IN">
                      <font>
                         <Font size="10.0" />
                      </font>

@@ -66,16 +66,20 @@ public class HelloController {
     }
 
  @FXML
-    private TextField principalAmt, tenure, result;
+    private TextField principalAmt, tenure, result, interest;
     NumberFormat formatter = new DecimalFormat("#0.00");
 
 @FXML
     protected void onCalculateButtonClick(){
+    double monthlyROI = 7.0/1200;
     double amt = Double.parseDouble(principalAmt.getText());
     double years = Double.parseDouble(tenure.getText());
-    double emi = ((amt*(7.0/1200)*Math.pow(1+(7.0/1200) , years*12))/(Math.pow(1+(7.0/1200) ,years*12)-1));
-//    double payableInterest = amt*years*12*
+    double emi = ((amt*(monthlyROI)*Math.pow(1+(monthlyROI) , years*12))/(Math.pow(1+(monthlyROI) ,years*12)-1));
+    double Interest = amt*years*12*monthlyROI;
+
+
     result.setText(String.valueOf(formatter.format(emi)));
+    interest.setText(String.valueOf(formatter.format(Interest)));
 
 }
 @FXML

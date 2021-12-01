@@ -63,7 +63,7 @@
       </Label>
       <TextField fx:id="aadhar" layoutX="324.0" layoutY="184.0" prefHeight="25.0" prefWidth="129.0" promptText="Aadhar No" />
       <TextField fx:id="pan" layoutX="475.0" layoutY="184.0" prefHeight="25.0" prefWidth="129.0" promptText="Pan No." />
-      <Button layoutX="253.0" layoutY="348.0" mnemonicParsing="false" style="-fx-background-color: #Dab53a;" text="Create Account">
+      <Button layoutX="253.0" layoutY="348.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="106.0" style="-fx-background-color: #Dab53a;" text="SUBMIT!">
          <font>
             <Font size="16.0" />
          </font>
