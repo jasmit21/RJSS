@@ -1,14 +1,15 @@
 package com.example.rjss;
+
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Label;
-import javafx.scene.control.PasswordField;
+import javafx.scene.control.*;
+import javafx.fxml.FXML;
+import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
-import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -18,64 +19,52 @@ import java.sql.Statement;
 import java.util.Objects;
 
 
-public class SignUpController {
-
-    private Parent root;
-    private Stage stage;
-    private Scene scene;
+public class LoanController  extends NullPointerException{
 
 
-    @FXML
-        private Pane creditpage;
+
+        private Parent root;
+        private Stage stage;
+        private Scene scene;
 
         @FXML
-        private Pane border;
+        private TextField fname;
 
         @FXML
-        private Label heading;
+        private TextField lname;
 
         @FXML
-        private TextField u_name;
+        private TextField pno;
 
         @FXML
-        private TextField first_name;
+        private TextField dob;
 
         @FXML
-        private TextField last_name;
+        private TextField mail;
+
+        @FXML
+        private TextField pin;
 
         @FXML
         private TextField phone;
 
         @FXML
-        private TextField email_id;
-
-        @FXML
-        private TextField aadhar;
-
-        @FXML
-        private TextField pan;
-
-        @FXML
-        private PasswordField password;
-
-        @FXML
-        private TextField state;
-
-        @FXML
-        private TextField dist;
-
-        @FXML
-        private TextField city;
-
-        @FXML
-        private TextField pin_code;
+        private TextArea add;
 
     @FXML
     private Label createMessage;
 
+
+        public void onBackClick(ActionEvent event) throws IOException {          //this is for going back to emi page from apply loan page
+            Parent root = FXMLLoader.load(getClass().getResource("EMI.fxml"));
+            stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+            scene = new Scene(root);
+            stage.setScene(scene);
+            stage.show();
+        }
     @FXML
-    private void Register(ActionEvent mouseEvent) throws SQLException, IOException {
-        if (!u_name.getText().isBlank()  && !password.getText().isBlank() && !first_name.getText().isBlank() && !last_name.getText().isBlank() && !phone.getText().isBlank() && !email_id.getText().isBlank() && !aadhar.getText().isBlank() &&  !pan.getText().isBlank() &&!state.getText().isBlank() && !city.getText().isBlank() && !dist.getText().isBlank() && !pin_code.getText().isBlank()) {
+    private void LoanDetails(ActionEvent mouseEvent) throws SQLException, IOException {
+        if ( !first_name.getText().isBlank() && !last_name.getText().isBlank() && !phone.getText().isBlank() && !email_id.getText().isBlank() &&  !pan.getText().isBlank() && !pin_code.getText().isBlank()) {
             if (createAccount()) {
                 root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("SignIn.fxml")));
                 stage = (Stage)((Node)mouseEvent.getSource()).getScene().getWindow();
@@ -110,17 +99,7 @@ public class SignUpController {
         return false;
     }
 
-    @FXML
-    public void backBtn(ActionEvent mouseEvent) {
-        try {
-            root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("SignUp.fxml")));
-            stage = (Stage)((Node)mouseEvent.getSource()).getScene().getWindow();
-            stage.setTitle("RJSS");
-            stage.setScene(new Scene(root));
-            stage.show();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+
     }
-}
+
 
