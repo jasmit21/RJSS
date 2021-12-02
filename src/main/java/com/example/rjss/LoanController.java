@@ -23,45 +23,45 @@ public class LoanController  extends NullPointerException{
 
 
 
-        private Parent root;
-        private Stage stage;
-        private Scene scene;
+    private Parent root;
+    private Stage stage;
+    private Scene scene;
 
-        @FXML
-        private TextField fname;
+    @FXML
+    private TextField fname;
 
-        @FXML
-        private TextField lname;
+    @FXML
+    private TextField lname;
 
-        @FXML
-        private TextField pno;
+    @FXML
+    private TextField pno;
 
-        @FXML
-        private TextField dob;
+    @FXML
+    private TextField dob;
 
-        @FXML
-        private TextField mail;
+    @FXML
+    private TextField mail;
 
-        @FXML
-        private TextField pin;
+    @FXML
+    private TextField pin;
 
-        @FXML
-        private TextField phone;
+    @FXML
+    private TextField phone;
 
-        @FXML
-        private TextArea add;
+    @FXML
+    private TextArea add;
 
     @FXML
     private Label createMessage;
 
 
-        public void onBackClick(ActionEvent event) throws IOException {          //this is for going back to emi page from apply loan page
-            Parent root = FXMLLoader.load(getClass().getResource("EMI.fxml"));
-            stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-            scene = new Scene(root);
-            stage.setScene(scene);
-            stage.show();
-        }
+    public void onBackClick(ActionEvent event) throws IOException {          //this is for going back to emi page from apply loan page
+        Parent root = FXMLLoader.load(getClass().getResource("EMI.fxml"));
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
     @FXML
     private void LoanDetails(ActionEvent mouseEvent) throws SQLException, IOException {
         if ( !fname.getText().isBlank() && !lname.getText().isBlank() && !pno.getText().isBlank() && !dob.getText().isBlank()  && !mail.getText().isBlank() && !add.getText().isBlank() &&  !phone.getText().isBlank() && !pin.getText().isBlank() ){
@@ -98,6 +98,4 @@ public class LoanController  extends NullPointerException{
         }
         return false;
     }
-    }
-
-
+}
