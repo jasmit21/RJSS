@@ -78,6 +78,9 @@
             <Font size="14.0" />
          </font>
       </Label>
-      <Button layoutX="23.0" layoutY="14.0" mnemonicParsing="false" onAction="#onHomeButtonClick" text="Home" />
+      <Button layoutX="15.0" layoutY="18.0" mnemonicParsing="false" onAction="#onHomeButtonClick" text="🏠 Home">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
    </children>
 </Pane>

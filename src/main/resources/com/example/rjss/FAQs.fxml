@@ -15,7 +15,7 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.rjss.HelloController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.rjss.HelloController">
    <children>
       <Label alignment="CENTER" layoutX="11.0" layoutY="40.0" prefHeight="60.0" prefWidth="130.0" text="  RJSS Bank Answers" textAlignment="RIGHT" />
       <Rectangle arcHeight="5.0" arcWidth="5.0" blendMode="MULTIPLY" fill="#dab53a" height="36.0" layoutX="14.0" layoutY="52.0" strokeLineCap="BUTT" strokeType="INSIDE" width="560.0">
@@ -78,9 +78,9 @@
             </RadialGradient>
          </fill>
       </Circle>
-      <Label graphicTextGap="5.0" layoutX="84.0" layoutY="27.0" text="FAQs" textFill="#0e68d7" wrapText="true">
+      <Label graphicTextGap="5.0" layoutX="92.0" layoutY="25.0" text="FAQs" textFill="#0e68d7" wrapText="true">
          <font>
-            <Font name="Arial Black" size="12.0" />
+            <Font name="Arial Black" size="13.0" />
          </font>
       </Label>
       <Label layoutX="54.0" layoutY="98.0" text="What are the payments limit? " />
@@ -148,6 +148,14 @@
             <Font name="System Italic" size="11.0" />
          </font>
       </Label>
-      <Button layoutX="14.0" layoutY="22.0" mnemonicParsing="false" onAction="#onHomeButtonClick" text="🏠 Home/" />
+      <Button layoutX="14.0" layoutY="22.0" mnemonicParsing="false" onAction="#onHomeButtonClick" text="🏠 Home">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Label graphicTextGap="5.0" layoutX="84.0" layoutY="23.0" text="|" wrapText="true">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
    </children>
 </Pane>
