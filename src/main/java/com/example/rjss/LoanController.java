@@ -64,9 +64,9 @@ public class LoanController  extends NullPointerException{
         }
     @FXML
     private void LoanDetails(ActionEvent mouseEvent) throws SQLException, IOException {
-        if ( !first_name.getText().isBlank() && !last_name.getText().isBlank() && !phone.getText().isBlank() && !email_id.getText().isBlank() &&  !pan.getText().isBlank() && !pin_code.getText().isBlank()) {
+        if ( !fname.getText().isBlank() && !lname.getText().isBlank() && !pno.getText().isBlank() && !dob.getText().isBlank()  && !mail.getText().isBlank() && !add.getText().isBlank() &&  !phone.getText().isBlank() && !pin.getText().isBlank() ){
             if (createAccount()) {
-                root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("SignIn.fxml")));
+                root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("Successfully.fxml")));
                 stage = (Stage)((Node)mouseEvent.getSource()).getScene().getWindow();
                 stage.setTitle("RJSS");
                 stage.setScene(new Scene(root));
@@ -81,7 +81,7 @@ public class LoanController  extends NullPointerException{
         DatabaseConnector connector = new DatabaseConnector();
         Connection connectDB = connector.getConnection();
 
-        String insertDetails = "insert into UserDetails values('"+u_name.getText()+"', '"+first_name.getText()+"', '"+last_name.getText()+"' , "+password.getText()+" ,'"+email_id.getText()+"', "+phone.getText()+" , "+aadhar.getText()+",'"+pan.getText()+"', '"+city.getText()+"' , '"+dist.getText()+"' ,'"+state.getText()+"' , "+pin_code.getText()+")";
+        String insertDetails = "insert into personal_loan values('"+fname.getText()+"','"+lname.getText()+"','"+pno.getText()+"',"+dob.getText()+" ,'"+mail.getText()+"','"+add.getText()+"',"+pin.getText()+","+phone.getText()+"\n)";
 
         try {
             Statement statement = connectDB.createStatement();
@@ -98,8 +98,6 @@ public class LoanController  extends NullPointerException{
         }
         return false;
     }
-
-
     }
 
 
