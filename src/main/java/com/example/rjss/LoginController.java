@@ -35,7 +35,7 @@ public class LoginController extends NullPointerException {
             validatelogin(event);
 
         } else {
-            LoginMessage.setText("Invalid Username Or Password!!!");
+            LoginMessage.setText("Enter Username Or Password!!!");
         }
     }
 
@@ -52,7 +52,7 @@ public class LoginController extends NullPointerException {
             while (queryResult.next()) {
                 if (queryResult.getInt(1) == 1) {
                     try {
-                        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Dashboard.fxml"));
+                        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("home.fxml"));
                         ((Node) (event.getSource())).getScene().getWindow().hide();
                         Parent root1 = fxmlLoader.load();
                         Stage stage = new Stage();
