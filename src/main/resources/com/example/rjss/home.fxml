@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Hyperlink?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.PasswordField?>
-<?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -16,89 +13,52 @@
    <children>
       <Pane layoutY="42.0" prefHeight="315.0" prefWidth="600.0">
          <children>
-            <ImageView fitHeight="315.0" fitWidth="472.0" layoutX="127.0" layoutY="1.0" opacity="0.45" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="523.0" fitWidth="779.0" layoutX="-177.0" layoutY="-181.0" opacity="0.45" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../icons/visual-stories-micheile-SoT4-mZhyhE-unsplash%20(1).jpg" />
+                  <Image url="@../../../icons/newhome/bg.jpg" />
                </image>
             </ImageView>
-            <ImageView fitHeight="43.0" fitWidth="45.0" layoutX="442.0" layoutY="98.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="51.0" fitWidth="60.0" layoutX="274.0" layoutY="57.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../icons/5566858%20(1).png" />
+                  <Image url="@../../../icons/newhome/passbook.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="43.0" fitWidth="45.0" layoutX="346.0" layoutY="154.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="51.0" fitWidth="51.0" layoutX="142.0" layoutY="147.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../icons/debit-card%20(1).png" />
+                  <Image url="@../../../icons/newhome/credit.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="43.0" fitWidth="45.0" layoutX="425.0" layoutY="205.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="51.0" fitWidth="60.0" layoutX="280.0" layoutY="198.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../icons/saving-money%20(1).png" />
+                  <Image url="@../../../icons/newhome/loan.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="43.0" fitWidth="45.0" layoutX="529.0" layoutY="154.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="51.0" fitWidth="51.0" layoutX="418.0" layoutY="136.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../icons/942802%20(1).png" />
+                  <Image url="@../../../icons/newhome/faqs.png" />
                </image>
             </ImageView>
-            <Pane layoutX="27.0" layoutY="65.0" prefHeight="217.0" prefWidth="190.0" style="-fx-background-color: #dab53a; -fx-border-color: #dedee4;">
-               <children>
-                  <Label layoutX="78.0" layoutY="14.0" text="SIGN IN">
-                     <font>
-                        <Font size="10.0" />
-                     </font>
-                  </Label>
-                  <Label layoutX="6.0" layoutY="39.0" text="User ID">
-                     <font>
-                        <Font size="10.0" />
-                     </font>
-                  </Label>
-                  <Label layoutX="7.0" layoutY="85.0" text="Password">
-                     <font>
-                        <Font size="10.0" />
-                     </font>
-                  </Label>
-                  <Button layoutX="7.0" layoutY="136.0" mnemonicParsing="false" onAction="#onLoginButtonClick" prefHeight="17.0" prefWidth="60.0" text="🔐 LOGIN">
-                     <font>
-                        <Font size="10.0" />
-                     </font>
-                  </Button>
-                  <Button layoutX="41.0" layoutY="178.0" mnemonicParsing="false" text="Create ACCOUNT" />
-                  <Hyperlink layoutX="76.0" layoutY="134.0" prefHeight="25.0" prefWidth="89.0" text="forgot password?">
-                     <font>
-                        <Font size="10.0" />
-                     </font>
-                  </Hyperlink>
-                  <Label layoutX="39.0" layoutY="160.0" text="Don't have an account?">
-                     <font>
-                        <Font size="11.0" />
-                     </font>
-                  </Label>
-                  <TextField fx:id="u_id" layoutX="7.0" layoutY="54.0" prefHeight="25.0" prefWidth="114.0" />
-                  <PasswordField fx:id="u_pass" layoutX="5.0" layoutY="106.0" prefHeight="25.0" prefWidth="114.0" />
-               </children>
-            </Pane>
             <Label layoutX="153.0" layoutY="14.0" style="-fx-background-color: #dab53a;" text="Welcome  To RJSS Bank">
                <font>
                   <Font name="Cooper Black" size="24.0" />
                </font>
             </Label>
-            <Button layoutX="512.0" layoutY="205.0" mnemonicParsing="false" onAction="#onFAQsButtonClick" prefHeight="17.0" prefWidth="60.0" text="FAQs">
+            <Button layoutX="409.0" layoutY="193.0" mnemonicParsing="false" onAction="#onFAQsButtonClick" prefHeight="17.0" prefWidth="60.0" text="FAQs">
                <font>
                   <Font size="10.0" />
                </font>
             </Button>
-            <Button layoutX="417.0" layoutY="248.0" mnemonicParsing="false" onAction="#onLoanButtonClick" prefHeight="17.0" prefWidth="60.0" text="Loan">
+            <Button layoutX="276.0" layoutY="259.0" mnemonicParsing="false" onAction="#onLoanButtonClick" prefHeight="17.0" prefWidth="60.0" text="Loan">
                <font>
                   <Font size="10.0" />
                </font>
             </Button>
-            <Button fx:id="gotopass" layoutX="434.0" layoutY="157.0" mnemonicParsing="false" onAction="#onpassbookButtonClick" prefHeight="17.0" prefWidth="60.0" text="Passbook">
+            <Button fx:id="gotopass" layoutX="271.0" layoutY="115.0" mnemonicParsing="false" onAction="#onpassbookButtonClick" prefHeight="17.0" prefWidth="60.0" text="Passbook">
                <font>
                   <Font size="10.0" />
                </font>
             </Button>
-            <Button layoutX="333.0" layoutY="205.0" mnemonicParsing="false" onAction="#onCcButtonClick" prefHeight="22.0" prefWidth="72.0" text="Credit Card">
+            <Button layoutX="133.0" layoutY="205.0" mnemonicParsing="false" onAction="#onCcButtonClick" prefHeight="22.0" prefWidth="72.0" text="Credit Card">
                <font>
                   <Font size="10.0" />
                </font>
@@ -106,7 +66,54 @@
             <Label fx:id="LoginMessage" layoutX="34.0" layoutY="282.0" prefHeight="17.0" prefWidth="153.0" />
          </children>
       </Pane>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#dab53a" height="43.0" layoutX="-3.0" stroke="BLACK" strokeType="INSIDE" width="606.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#dab53a" height="43.0" layoutX="-3.0" layoutY="357.0" stroke="BLACK" strokeType="INSIDE" width="606.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#dab53a" height="44.0" layoutX="-5.0" layoutY="-1.0" stroke="WHITE" strokeType="INSIDE" width="606.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#dab53a" height="51.0" layoutX="-3.0" layoutY="351.0" stroke="WHITE" strokeType="INSIDE" width="606.0" />
+      <ImageView fitHeight="29.0" fitWidth="35.0" layoutX="561.0" layoutY="354.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../icons/newhome/help.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="345.0" layoutY="382.0" text="© 2018 RJSS Bank. All rights reserved." />
+      <Label layoutX="553.0" layoutY="382.0" text="Support" />
+      <ImageView fitHeight="68.0" fitWidth="72.0" layoutX="-12.0" layoutY="-13.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../icons/newhome/logo.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="46.0" layoutY="10.0" text="RJSS">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="36.0" fitWidth="36.0" layoutX="6.0" layoutY="359.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../icons/newhome/insta.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="43.0" fitWidth="36.0" layoutX="53.0" layoutY="359.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../icons/newhome/gmail.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="36.0" fitWidth="43.0" layoutX="103.0" layoutY="359.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../icons/newhome/linkedin.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="36.0" fitWidth="36.0" layoutX="154.0" layoutY="359.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../icons/newhome/twitter.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="36.0" fitWidth="29.0" layoutX="563.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../icons/newhome/menu.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="36.0" fitWidth="29.0" layoutX="523.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../icons/newhome/settings.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>
