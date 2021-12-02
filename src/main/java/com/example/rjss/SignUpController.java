@@ -113,7 +113,7 @@ public class SignUpController {
     @FXML
     public void backBtn(ActionEvent mouseEvent) {
         try {
-            root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("SignUp.fxml")));
+            root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("SignIn.fxml")));
             stage = (Stage)((Node)mouseEvent.getSource()).getScene().getWindow();
             stage.setTitle("RJSS");
             stage.setScene(new Scene(root));
