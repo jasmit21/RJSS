@@ -60,7 +60,11 @@ public class Passbook implements Initializable {
             new table("2021-04-21","49203568","50000"),
             new table("2021-08-21","54201036","20000"),
             new table("2021-09-08","61204878","1500"),
-            new table("2021-11-25","62114578","50000")
+            new table("2021-10-15","62114578","50300"),
+            new table("2021-10-25","72114578","2000"),
+            new table("2021-11-02","82143578","500"),
+            new table("2021-11-12","92654578","3500"),
+            new table("2021-12-12","92994578","100000")
     );
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
