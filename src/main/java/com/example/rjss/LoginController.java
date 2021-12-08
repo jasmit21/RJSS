@@ -27,7 +27,7 @@ public class LoginController extends NullPointerException {
     private PasswordField u_pass;
 
     @FXML
-    private Label LoginMessage;
+    private Label LoginMessage, LoginMessage1,LoginMessage2,LoginMessage3;
 
     @FXML
     public void onLoginButtonClick(ActionEvent event) {
@@ -35,22 +35,37 @@ public class LoginController extends NullPointerException {
             validatelogin(event);
 
         } else {
-            if (u_id.getText().length() == 0) {
-                u_id.setStyle("-fx-border-color: red; -fx-border-width: 2px;");
-                LoginMessage.setText("Enter Username !!!");
-            }
-            else{u_id.setStyle(null);}
-            if (u_pass.getText().length() == 0) {
-                u_pass.setStyle("-fx-border-color: red; -fx-border-width: 2px;");
-                LoginMessage.setText("Enter  Password!!!");
-            }
-            else{u_pass.setStyle(null);}
+
             if (u_id.getText().length() == 0 && u_pass.getText().length() == 0)
-            {LoginMessage.setText("Enter Username And Password!!!");}
+
+            {
+                LoginMessage.setText("⚠ Enter Username And Password");
+            }
+            else if(u_id.getText().length() == 0 || u_pass.getText().length() == 0)
+            {
+                LoginMessage.setText("");
+                if (u_id.getText().length() == 0) {
+                    u_id.setStyle("-fx-border-color: red; -fx-border-width: 2px;");
+                    LoginMessage1.setText("⚠ Enter Username");
+                } else if  (u_pass.getText().length() == 0){
+                    u_id.setStyle(null);
+                    LoginMessage1.setText("");
+                    u_pass.setStyle("-fx-border-color: red; -fx-border-width: 2px;");
+                    LoginMessage2.setText("⚠ Enter Password");
+                    } else {
+
+                        u_pass.setStyle(null);
+                    LoginMessage2.setText("");
+                    }
+                }
+
+
+            }
 
 
         }
-    }
+
+
 
 
     public void validatelogin(ActionEvent event) {
@@ -77,7 +92,7 @@ public class LoginController extends NullPointerException {
                         ep.printStackTrace();
                     }
                 } else {
-                    LoginMessage.setText("Invalid Login!");
+                    LoginMessage3.setText("Invalid Login!");
                 }
             }
         } catch (Exception ep) {

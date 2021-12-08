@@ -18,28 +18,43 @@
             <Image url="@../../../icons/Untitled_design__5_-removebg-preview.png" />
          </image>
       </ImageView>
-      <TextField fx:id="u_id" alignment="CENTER" layoutX="275.0" layoutY="184.0" prefHeight="27.0" prefWidth="180.0" promptText="Username" style="-fx-border-color: black;" />
-      <PasswordField fx:id="u_pass" alignment="CENTER" layoutX="275.0" layoutY="233.0" prefHeight="27.0" prefWidth="180.0" promptText="Password" style="-fx-border-color: black;" />
-      <Label layoutX="145.0" layoutY="183.0" text="Username">
+      <TextField fx:id="u_id" alignment="CENTER" layoutX="275.0" layoutY="201.0" prefHeight="27.0" prefWidth="180.0" promptText="Username" style="-fx-border-color: black;" />
+      <PasswordField fx:id="u_pass" alignment="CENTER" layoutX="275.0" layoutY="250.0" prefHeight="27.0" prefWidth="180.0" promptText="Password" style="-fx-border-color: black;" />
+      <Label layoutX="145.0" layoutY="200.0" text="Username">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
       </Label>
-      <Label layoutX="146.0" layoutY="232.0" text="Password">
+      <Label layoutX="146.0" layoutY="249.0" text="Password">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
       </Label>
-      <Button layoutX="246.0" layoutY="277.0" mnemonicParsing="false" onAction="#onLoginButtonClick" prefHeight="25.0" prefWidth="106.0" style="-fx-background-color: #2c2929; -fx-background-radius: 15px;" text="🔐 LOGIN" textAlignment="CENTER" textFill="WHITE" />
-      <Button layoutX="335.0" layoutY="322.0" mnemonicParsing="false" onAction="#onCreateAccountClick" prefHeight="25.0" prefWidth="120.0" style="-fx-background-color: #2c2929; -fx-background-radius: 15px;" text="Create Account" textAlignment="CENTER" textFill="WHITE" />
-      <Label layoutX="145.0" layoutY="325.0" prefHeight="20.0" prefWidth="151.0" text="Don't have an account?">
+      <Button layoutX="246.0" layoutY="294.0" mnemonicParsing="false" onAction="#onLoginButtonClick" prefHeight="25.0" prefWidth="106.0" style="-fx-background-color: #2c2929; -fx-background-radius: 15px;" text="🔐 LOGIN" textAlignment="CENTER" textFill="WHITE" />
+      <Button layoutX="335.0" layoutY="339.0" mnemonicParsing="false" onAction="#onCreateAccountClick" prefHeight="25.0" prefWidth="120.0" style="-fx-background-color: #2c2929; -fx-background-radius: 15px;" text="Create Account" textAlignment="CENTER" textFill="WHITE" />
+      <Label layoutX="145.0" layoutY="342.0" prefHeight="20.0" prefWidth="151.0" text="Don't have an account?">
          <font>
             <Font size="14.0" />
          </font>
       </Label>
-      <Label fx:id="LoginMessage" layoutX="199.0" layoutY="366.0" prefHeight="20.0" prefWidth="227.0" textFill="#c31010">
+      <Label fx:id="LoginMessage" layoutX="187.0" layoutY="171.0" prefHeight="20.0" prefWidth="227.0" textFill="#c31010">
          <font>
-            <Font name="System Bold Italic" size="14.0" />
+            <Font name="System Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="LoginMessage1" layoutX="135.0" layoutY="223.0" prefHeight="20.0" prefWidth="227.0" textFill="#c31010">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="LoginMessage2" layoutX="140.0" layoutY="269.0" prefHeight="20.0" prefWidth="227.0" textFill="#c31010">
+         <font>
+            <Font name="System Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="287.0" layoutY="163.0" textFill="#c31010">
+         <font>
+            <Font size="14.0" />
          </font>
       </Label>
    </children>

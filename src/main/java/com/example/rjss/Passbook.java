@@ -39,8 +39,8 @@ public class Passbook implements Initializable {
     @FXML
     private TableColumn<table, String> amount;
 
-    @FXML
-    private Button gotohome;
+//    @FXML
+//    private Button gotohome;
 
     @FXML
     public void onHomeButtonClick(ActionEvent event) throws IOException {
@@ -69,6 +69,5 @@ public class Passbook implements Initializable {
       amount.setCellValueFactory(new PropertyValueFactory<table, String>("amount"));
     table.setItems(list);
     }
-
 
 }
