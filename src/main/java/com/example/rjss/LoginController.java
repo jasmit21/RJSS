@@ -35,7 +35,20 @@ public class LoginController extends NullPointerException {
             validatelogin(event);
 
         } else {
-            LoginMessage.setText("Enter Username Or Password!!!");
+            if (u_id.getText().length() == 0) {
+                u_id.setStyle("-fx-border-color: red; -fx-border-width: 2px;");
+                LoginMessage.setText("Enter Username !!!");
+            }
+            else{u_id.setStyle(null);}
+            if (u_pass.getText().length() == 0) {
+                u_pass.setStyle("-fx-border-color: red; -fx-border-width: 2px;");
+                LoginMessage.setText("Enter  Password!!!");
+            }
+            else{u_pass.setStyle(null);}
+            if (u_id.getText().length() == 0 && u_pass.getText().length() == 0)
+            {LoginMessage.setText("Enter Username And Password!!!");}
+
+
         }
     }
 
