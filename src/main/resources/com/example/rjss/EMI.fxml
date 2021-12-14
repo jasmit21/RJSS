@@ -13,13 +13,8 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<Pane focusTraversable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" scaleShape="false" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.rjss.HelloController">
+<Pane focusTraversable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" scaleShape="false" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.rjss.HelloController">
    <children>
-      <Label layoutX="14.0" layoutY="28.0" prefHeight="20.0" prefWidth="97.0" text="EMI Calculator">
-         <font>
-            <Font size="14.0" />
-         </font>
-      </Label>
       <Rectangle arcHeight="4.0" arcWidth="4.0" height="343.0" layoutX="6.0" layoutY="51.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeMiterLimit="90.0" strokeType="OUTSIDE" strokeWidth="1.5" width="583.0">
          <fill>
             <LinearGradient endX="1.0" endY="1.0" startX="0.6259541975632879">
@@ -51,10 +46,6 @@
             <Font size="15.0" />
          </font>
       </Label>
-      <Label layoutX="51.0" layoutY="133.0" prefHeight="20.0" prefWidth="158.0" text="______________________________" />
-      <TextField fx:id="principalAmt" blendMode="SCREEN" layoutX="51.0" layoutY="121.0" promptText="Enter Amount" style="-fx-background-color: white;" />
-      <TextField fx:id="tenure" blendMode="SCREEN" layoutX="359.0" layoutY="121.0" prefHeight="25.0" prefWidth="149.0" promptText="In years" />
-      <Label layoutX="359.0" layoutY="133.0" prefHeight="20.0" prefWidth="158.0" text="______________________________" />
       <Label blendMode="COLOR_BURN" layoutX="51.0" layoutY="231.0" prefHeight="45.0" prefWidth="67.0" text="EMI" textFill="#0d0d0d">
          <font>
             <Font size="30.0" />
@@ -77,7 +68,6 @@
          </font>
       </Label>
       <TextField fx:id="interest" blendMode="HARD_LIGHT" layoutX="384.0" layoutY="274.0" prefHeight="33.0" prefWidth="158.0" promptText="Interest" />
-      <Button layoutX="14.0" layoutY="3.0" mnemonicParsing="false" onAction="#onHomeButtonClick" text="🏠Home" />
       <Button layoutX="240.0" layoutY="339.0" mnemonicParsing="false" onAction="#onApplyButtonClick" prefHeight="33.0" prefWidth="97.0" style="-fx-background-color: #322d2d; -fx-background-radius: 15px;" text="Apply Now!" textAlignment="CENTER" textFill="WHITE">
          <font>
             <Font name="Berlin Sans FB" size="12.0" />
@@ -93,5 +83,17 @@
             <Image url="@../../../icons/rupee-icon-EMI.png" />
          </image>
       </ImageView>
+      <TextField fx:id="principalAmt" layoutX="51.0" layoutY="120.0" promptText="Enter Amount" style="-fx-border-color: black; -fx-border-width: 0px 0px 1.5px 0px;" />
+      <TextField fx:id="tenure" layoutX="358.0" layoutY="120.0" promptText="Enter Years" style="-fx-border-color: black; -fx-border-width: 0px 0px 1.5px 0px;" />
+      <Label fx:id="heading" layoutX="77.0" layoutY="14.0" text=" | EMI Calculator" textAlignment="CENTER">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button layoutX="9.0" layoutY="14.0" mnemonicParsing="false" onAction="#onHomeButtonClick" prefHeight="21.0" prefWidth="67.0" style="-fx-background-color: #2c2929; -fx-background-radius: 5px;" text="🏠 Home" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="10.0" />
+         </font>
+      </Button>
    </children>
 </Pane>

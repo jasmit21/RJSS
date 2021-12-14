@@ -7,9 +7,9 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="419.0" prefWidth="713.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.rjss.HelloController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="419.0" prefWidth="713.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.rjss.HelloController">
    <children>
-      <Pane layoutX="-2.0" layoutY="46.0" prefHeight="40.0" prefWidth="717.0" style="-fx-background-color: #Dab53a;">
+      <Pane layoutY="46.0" prefHeight="40.0" prefWidth="713.0" style="-fx-background-color: #Dab53a;">
          <children>
             <Label layoutX="210.0" layoutY="4.0" text="Choose the Best Credit Card for you">
                <font>

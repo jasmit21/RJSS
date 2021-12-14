@@ -115,6 +115,10 @@
             <Image url="@../../../icons/newhome/settings.png" />
          </image>
       </ImageView>
-      <Button layoutX="462.0" layoutY="8.0" mnemonicParsing="false" onAction="#onLogoutButtonclick" text="Logout" />
+      <Button layoutX="443.0" layoutY="10.0" mnemonicParsing="false" onAction="#onLogoutButtonclick" prefHeight="21.0" prefWidth="67.0" style="-fx-background-color: #2c2929; -fx-background-radius: 5px;" text="Logout" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="10.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>
