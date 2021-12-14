@@ -73,7 +73,7 @@ public class SignUpController {
 
 
     @FXML
-    private void Register(ActionEvent mouseEvent) throws SQLException, IOException, InterruptedException {
+    private void Register(ActionEvent mouseEvent) throws SQLException, IOException{
         if (!u_name.getText().isBlank()  && !password.getText().isBlank() && !first_name.getText().isBlank() && !last_name.getText().isBlank() && !phone.getText().isBlank() && !email_id.getText().isBlank() && !aadhar.getText().isBlank() &&  !pan.getText().isBlank() &&!state.getText().isBlank() && !city.getText().isBlank() && !dist.getText().isBlank() && !pin_code.getText().isBlank()) {
             if (createAccount()) {
 
@@ -81,8 +81,6 @@ public class SignUpController {
                 alert.setTitle("Confirmation Dialog");
                 alert.setContentText("Congratulations!!.\nYou have now successfully created account in RJSS Bank. You will receive an E-mail acknowledging your successful account creation, and the E-mail will include the Username that you selected which will be required for Login your account.\n\n");
                 alert.showAndWait();
-
-
 
 
                 root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("SignIn.fxml")));

@@ -66,11 +66,10 @@ public class LoanController  extends NullPointerException{
     }
     @FXML
     private void LoanDetails(ActionEvent mouseEvent) throws SQLException, IOException {
-        if ( !fname.getText().isBlank() && !lname.getText().isBlank() && !pno.getText().isBlank() && !dob.getText().isBlank()  && !mail.getText().isBlank() && !add.getText().isBlank() &&  !phone.getText().isBlank() && !pin.getText().isBlank() )
-        {
+        if (!fname.getText().isBlank() && !lname.getText().isBlank() && !pno.getText().isBlank() && !dob.getText().isBlank() && !mail.getText().isBlank() && !add.getText().isBlank() && !phone.getText().isBlank() && !pin.getText().isBlank()) {
             if (createAccount()) {
                 root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("Successfully.fxml")));
-                stage = (Stage)((Node)mouseEvent.getSource()).getScene().getWindow();
+                stage = (Stage) ((Node) mouseEvent.getSource()).getScene().getWindow();
                 stage.setTitle("RJSS");
                 stage.setScene(new Scene(root));
                 stage.show();
@@ -82,8 +81,8 @@ public class LoanController  extends NullPointerException{
             alert.setContentText("Please fill in all the Fields.");
             alert.showAndWait();
 
-        }}
-
+        }
+    }
 
     private boolean createAccount() throws SQLException{
         DatabaseConnector connector = new DatabaseConnector();
