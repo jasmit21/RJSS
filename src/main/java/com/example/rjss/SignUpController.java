@@ -1,13 +1,12 @@
 package com.example.rjss;
+
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Label;
-import javafx.scene.control.PasswordField;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 
@@ -16,6 +15,7 @@ import java.sql.Connection;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.Objects;
+import java.util.Optional;
 
 
 public class SignUpController {
@@ -70,22 +70,36 @@ public class SignUpController {
         @FXML
         private TextField pin_code;
 
-    @FXML
-    private Label createMessage;
+
 
     @FXML
-    private void Register(ActionEvent mouseEvent) throws SQLException, IOException {
+    private void Register(ActionEvent mouseEvent) throws SQLException, IOException, InterruptedException {
         if (!u_name.getText().isBlank()  && !password.getText().isBlank() && !first_name.getText().isBlank() && !last_name.getText().isBlank() && !phone.getText().isBlank() && !email_id.getText().isBlank() && !aadhar.getText().isBlank() &&  !pan.getText().isBlank() &&!state.getText().isBlank() && !city.getText().isBlank() && !dist.getText().isBlank() && !pin_code.getText().isBlank()) {
             if (createAccount()) {
+
+                Alert alert = new Alert(Alert.AlertType.INFORMATION);
+                alert.setTitle("Confirmation Dialog");
+                alert.setContentText("Congratulations!!.\nYou have now successfully created account in RJSS Bank. You will receive an E-mail acknowledging your successful account creation, and the E-mail will include the Username that you selected which will be required for Login your account.\n\n");
+                alert.showAndWait();
+
+
+
+
                 root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("SignIn.fxml")));
                 stage = (Stage)((Node)mouseEvent.getSource()).getScene().getWindow();
                 stage.setTitle("RJSS");
                 stage.setScene(new Scene(root));
                 stage.show();
             }
-        } else {
-            createMessage.setText("Please fill all the details.");
+        } else if(u_name.getText().isBlank()  || password.getText().isBlank() || first_name.getText().isBlank() || last_name.getText().isBlank() || phone.getText().isBlank() || email_id.getText().isBlank() || aadhar.getText().isBlank()  || pan.getText().isBlank() || state.getText().isBlank() || city.getText().isBlank() || dist.getText().isBlank() || pin_code.getText().isBlank()) {
+
+            Alert alert = new Alert(Alert.AlertType.WARNING);
+            alert.setTitle("Warning Alert Dialog");
+            alert.setContentText("Please fill in all the Fields.");
+            alert.showAndWait();
+
         }
+
     }
 
     private boolean createAccount() throws SQLException{

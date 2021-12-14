@@ -1,5 +1,6 @@
 package com.example.rjss;
 
+import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -17,6 +18,7 @@ import java.sql.Connection;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.Objects;
+import java.util.Optional;
 
 
 public class LoanController  extends NullPointerException{
@@ -64,7 +66,8 @@ public class LoanController  extends NullPointerException{
     }
     @FXML
     private void LoanDetails(ActionEvent mouseEvent) throws SQLException, IOException {
-        if ( !fname.getText().isBlank() && !lname.getText().isBlank() && !pno.getText().isBlank() && !dob.getText().isBlank()  && !mail.getText().isBlank() && !add.getText().isBlank() &&  !phone.getText().isBlank() && !pin.getText().isBlank() ){
+        if ( !fname.getText().isBlank() && !lname.getText().isBlank() && !pno.getText().isBlank() && !dob.getText().isBlank()  && !mail.getText().isBlank() && !add.getText().isBlank() &&  !phone.getText().isBlank() && !pin.getText().isBlank() )
+        {
             if (createAccount()) {
                 root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("Successfully.fxml")));
                 stage = (Stage)((Node)mouseEvent.getSource()).getScene().getWindow();
@@ -73,9 +76,14 @@ public class LoanController  extends NullPointerException{
                 stage.show();
             }
         } else {
-            createMessage.setText("Please fill all the details.");
-        }
-    }
+//            createMessage.setText("Please fill all the details.");
+            Alert alert = new Alert(Alert.AlertType.WARNING);
+            alert.setTitle("Warning Alert Dialog");
+            alert.setContentText("Please fill in all the Fields.");
+            alert.showAndWait();
+
+        }}
+
 
     private boolean createAccount() throws SQLException{
         DatabaseConnector connector = new DatabaseConnector();

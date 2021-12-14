@@ -72,7 +72,6 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
-      <Label layoutX="350.0" layoutY="75.0" />
       <PasswordField fx:id="password" layoutX="475.0" layoutY="115.0" prefHeight="25.0" prefWidth="129.0" promptText="Password" />
       <Label layoutX="23.0" layoutY="227.0" prefHeight="26.0" prefWidth="140.0" text="Address Details:">
          <font>
@@ -87,7 +86,7 @@
       <Label layoutX="332.0" layoutY="262.0" text="State" />
       <Label layoutX="490.0" layoutY="262.0" text="PIN Code" />
       <TextField fx:id="pin_code" layoutX="472.0" layoutY="293.0" prefHeight="25.0" prefWidth="129.0" promptText="Pin" />
-      <Label fx:id="createMessage" layoutX="203.0" layoutY="393.0" prefHeight="19.0" prefWidth="190.0" textFill="#eb1010">
+      <Label fx:id="createMessage" layoutX="215.0" layoutY="393.0" prefHeight="19.0" prefWidth="190.0" textFill="#eb1010">
          <font>
             <Font name="System Bold" size="13.0" />
          </font>

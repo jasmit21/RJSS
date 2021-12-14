@@ -34,36 +34,36 @@ public class LoginController extends NullPointerException {
         if (!u_id.getText().isBlank() && !u_pass.getText().isBlank()) {
             validatelogin(event);
 
-        } else {
+        }
+        else {
 
-            if (u_id.getText().length() == 0 && u_pass.getText().length() == 0)
-
-            {
+            if (u_id.getText().length() == 0 && u_pass.getText().length() == 0) {
                 LoginMessage.setText("⚠ Enter Username And Password");
+                LoginMessage1.setText("");
+                LoginMessage2.setText("");
+
             }
-            else if(u_id.getText().length() == 0 || u_pass.getText().length() == 0)
-            {
+
+            else if (u_id.getText().length() == 0 || u_pass.getText().length() == 0) {
                 LoginMessage.setText("");
                 if (u_id.getText().length() == 0) {
                     u_id.setStyle("-fx-border-color: red; -fx-border-width: 2px;");
                     LoginMessage1.setText("⚠ Enter Username");
-                } else if  (u_pass.getText().length() == 0){
+                    LoginMessage2.setText("");
+                    u_pass.setStyle(null);
+                } else if (u_pass.getText().length() == 0) {
                     u_id.setStyle(null);
                     LoginMessage1.setText("");
                     u_pass.setStyle("-fx-border-color: red; -fx-border-width: 2px;");
                     LoginMessage2.setText("⚠ Enter Password");
-                    } else {
-
-                        u_pass.setStyle(null);
-                    LoginMessage2.setText("");
-                    }
                 }
-
-
             }
-
-
         }
+    }
+
+
+
+
 
 
 
@@ -95,7 +95,8 @@ public class LoginController extends NullPointerException {
                     LoginMessage3.setText("Invalid Login!");
                 }
             }
-        } catch (Exception ep) {
+        }
+        catch (Exception ep) {
             ep.printStackTrace();
         }
     }
