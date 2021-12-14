@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane fx:id="creditpage" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="442.0" prefWidth="619.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.rjss.SignUpController">
+<Pane fx:id="creditpage" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="442.0" prefWidth="619.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.rjss.SignUpController">
    <children>
       <Pane fx:id="border" prefHeight="45.0" prefWidth="619.0" style="-fx-background-color: #Dab53a;">
          <children>
@@ -24,39 +24,39 @@
             <Font size="14.0" />
          </font>
       </Label>
-      <Label layoutX="27.0" layoutY="92.0" text="Username">
+      <Label layoutX="27.0" layoutY="92.0" text="Username*">
          <font>
             <Font size="13.0" />
          </font>
       </Label>
-      <Label layoutX="193.0" layoutY="93.0" text="First Name" />
-      <Label layoutX="335.0" layoutY="93.0" text="Last Name" />
+      <Label layoutX="193.0" layoutY="93.0" text="First Name*" />
+      <Label layoutX="335.0" layoutY="93.0" text="Last Name*" />
       <TextField fx:id="u_name" layoutX="19.0" layoutY="115.0" prefHeight="25.0" prefWidth="140.0" promptText="Username" />
       <TextField fx:id="first_name" layoutX="182.0" layoutY="115.0" prefHeight="25.0" prefWidth="116.0" promptText="First name" />
       <TextField fx:id="last_name" layoutX="324.0" layoutY="115.0" prefHeight="25.0" prefWidth="129.0" promptText="Last name" />
-      <Label layoutX="477.0" layoutY="92.0" text="Password">
+      <Label layoutX="477.0" layoutY="92.0" text="Password*">
          <font>
             <Font size="13.0" />
          </font>
       </Label>
-      <Label layoutX="191.0" layoutY="158.0" text="Mobile no.">
+      <Label layoutX="192.0" layoutY="158.0" text="Mobile no.*">
          <font>
             <Font size="13.0" />
          </font>
       </Label>
-      <Label layoutX="23.0" layoutY="158.0" text="Email ID">
+      <Label layoutX="23.0" layoutY="158.0" text="Email ID*">
          <font>
             <Font size="13.0" />
          </font>
       </Label>
       <TextField fx:id="phone" layoutX="181.0" layoutY="184.0" prefHeight="25.0" prefWidth="116.0" promptText="Phone No." />
       <TextField fx:id="email_id" layoutX="19.0" layoutY="184.0" prefHeight="25.0" prefWidth="140.0" promptText="Email" />
-      <Label layoutX="328.0" layoutY="158.0" text="Aadhar Card No">
+      <Label layoutX="328.0" layoutY="158.0" text="Aadhar Card No*">
          <font>
             <Font size="13.0" />
          </font>
       </Label>
-      <Label layoutX="475.0" layoutY="158.0" text="Pan no.">
+      <Label layoutX="475.0" layoutY="158.0" text="Pan no.*">
          <font>
             <Font size="13.0" />
          </font>
@@ -80,17 +80,17 @@
       <TextField fx:id="state" layoutX="325.0" layoutY="293.0" prefHeight="25.0" prefWidth="140.0" promptText="State" />
       <TextField fx:id="dist" layoutX="169.0" layoutY="293.0" prefHeight="25.0" prefWidth="140.0" promptText="District" />
       <TextField fx:id="city" layoutX="13.0" layoutY="293.0" prefHeight="25.0" prefWidth="140.0" promptText="City" />
-      <Label layoutX="20.0" layoutY="262.0" text="City" />
-      <Label layoutX="174.0" layoutY="262.0" text="District" />
-      <Label layoutX="332.0" layoutY="262.0" text="State" />
-      <Label layoutX="490.0" layoutY="262.0" text="PIN Code" />
+      <Label layoutX="20.0" layoutY="262.0" text="City*" />
+      <Label layoutX="174.0" layoutY="262.0" text="District*" />
+      <Label layoutX="332.0" layoutY="262.0" text="State*" />
+      <Label layoutX="490.0" layoutY="262.0" text="PIN Code*" />
       <TextField fx:id="pin_code" layoutX="472.0" layoutY="293.0" prefHeight="25.0" prefWidth="129.0" promptText="Pin" />
       <Label fx:id="createMessage" layoutX="215.0" layoutY="393.0" prefHeight="19.0" prefWidth="190.0" textFill="#eb1010">
          <font>
             <Font name="System Bold" size="13.0" />
          </font>
       </Label>
-      <Button layoutX="11.0" layoutY="12.0" mnemonicParsing="false" onAction="#onHomeButtonClick" prefHeight="21.0" prefWidth="67.0" style="-fx-background-color: #2c2929; -fx-background-radius: 5px;" text="🏠 Home" textAlignment="CENTER" textFill="WHITE">
+      <Button layoutX="11.0" layoutY="12.0" mnemonicParsing="false" onAction="#backBtn" prefHeight="21.0" prefWidth="67.0" style="-fx-background-color: #2c2929; -fx-background-radius: 5px;" text="🏠 Home" textAlignment="CENTER" textFill="WHITE">
          <font>
             <Font name="System Bold" size="10.0" />
          </font>
