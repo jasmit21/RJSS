@@ -12,9 +12,14 @@
    <children>
       <Pane fx:id="border" prefHeight="45.0" prefWidth="619.0" style="-fx-background-color: #Dab53a;">
          <children>
-            <Label fx:id="heading" layoutX="79.0" layoutY="12.0" text=" | Create Account" textAlignment="CENTER">
+            <Label fx:id="heading" layoutX="79.0" layoutY="12.0" text=" | " textAlignment="CENTER">
                <font>
                   <Font size="14.0" />
+               </font>
+            </Label>
+            <Label graphicTextGap="5.0" layoutX="89.0" layoutY="13.0" text=" Create Account" textFill="#0e68d7" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="13.0" />
                </font>
             </Label>
          </children>
@@ -39,7 +44,7 @@
             <Font size="13.0" />
          </font>
       </Label>
-      <Label layoutX="192.0" layoutY="158.0" text="Mobile no.*">
+      <Label layoutX="192.0" layoutY="158.0" text="Mobile No.*">
          <font>
             <Font size="13.0" />
          </font>
@@ -49,23 +54,23 @@
             <Font size="13.0" />
          </font>
       </Label>
-      <TextField fx:id="phone" layoutX="181.0" layoutY="184.0" prefHeight="25.0" prefWidth="116.0" promptText="Phone No." />
+      <TextField fx:id="phone" layoutX="181.0" layoutY="184.0" prefHeight="25.0" prefWidth="116.0" promptText="Mobile No." />
       <TextField fx:id="email_id" layoutX="19.0" layoutY="184.0" prefHeight="25.0" prefWidth="140.0" promptText="Email" />
       <Label layoutX="328.0" layoutY="158.0" text="Aadhar Card No*">
          <font>
             <Font size="13.0" />
          </font>
       </Label>
-      <Label layoutX="475.0" layoutY="158.0" text="Pan no.*">
+      <Label layoutX="475.0" layoutY="158.0" text="PAN No.*">
          <font>
             <Font size="13.0" />
          </font>
       </Label>
       <TextField fx:id="aadhar" layoutX="324.0" layoutY="184.0" prefHeight="25.0" prefWidth="129.0" promptText="Aadhar No" />
       <TextField fx:id="pan" layoutX="475.0" layoutY="184.0" prefHeight="25.0" prefWidth="129.0" promptText="Pan No." />
-      <Button layoutX="253.0" layoutY="344.0" mnemonicParsing="false" onAction="#Register" prefHeight="36.0" prefWidth="106.0" style="-fx-background-color: #Dab53a;" text="SUBMIT!">
+      <Button layoutX="251.0" layoutY="343.0" mnemonicParsing="false" onAction="#Register" prefHeight="36.0" prefWidth="106.0" style="-fx-background-color: #Dab53a;" text="Submit">
          <font>
-            <Font size="16.0" />
+            <Font name="System Bold" size="16.0" />
          </font>
          <cursor>
             <Cursor fx:constant="HAND" />
@@ -95,5 +100,7 @@
             <Font name="System Bold" size="10.0" />
          </font>
       </Button>
+      <Pane fx:id="border1" layoutY="398.0" prefHeight="45.0" prefWidth="619.0" style="-fx-background-color: #Dab53a;" />
+      <Label layoutX="10.0" layoutY="418.0" prefHeight="17.0" prefWidth="582.0" text="By signing up, you are creating a RJSS Bank account, and you agree RJSS's Terms of Use and Privacy Policy" />
    </children>
 </Pane>
